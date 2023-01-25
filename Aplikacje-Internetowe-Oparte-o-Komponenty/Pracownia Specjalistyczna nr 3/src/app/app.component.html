@@ -1,0 +1,21 @@
+<div class="switch-container">
+    <button class="switch-container-button" (click)="ChangeComponentFood()">Pizza/Kebab</button>
+</div>
+<ng-container *ngIf="isPizzaOrKebab; then PizzasBox; else KebabsBox"></ng-container>
+<ng-template #PizzasBox>
+    <div class="pizzas-container">
+        <app-pizza type="Hawajska" [price]="19.50" [available]="false" srcImg="assets/resources/img/png0.png"
+            [toppings]="['ananas', 'szynka', 'oregano']"></app-pizza>
+        <app-pizza type="Pepperoni" [price]="22.50" [available]="true" srcImg="assets/resources/img/png1.png"
+            [toppings]="['salami', 'cebula', 'peperoni', 'oregano']"></app-pizza>
+        <app-pizza type="Capriciosa" [price]="23.50" [available]="true" srcImg="assets/resources/img/png2.png"
+            [toppings]="['mozzarella', 'szynka', 'grzyby']"></app-pizza>
+    </div>
+</ng-template>
+<ng-template #KebabsBox>
+    <div class="kebab-container">
+        <app-kebab type="Mały" [price]="16.50" [available]="true"></app-kebab>
+        <app-kebab type="Średni" [price]="19.50" [available]="true"></app-kebab>
+        <app-kebab type="Duży" [price]="22.50" [available]="true"></app-kebab>
+    </div>
+</ng-template>

@@ -1,0 +1,18 @@
+<div class="kebab-box">
+    <img class="kebab-box-img imgaes" [src]="srcImg">
+    <div class="kebab-box-info">
+        <p>Rodzaj: <b>{{type}}</b></p>
+        <p>Cena: <b>{{price}}zł</b></p>
+        <p>Dostępność:
+            <b *ngIf="available; then Yesavaliable; else Noavailable"></b>
+            <ng-template #Yesavaliable>
+                <b>Dostępne</b>
+            </ng-template>
+            <ng-template #Noavailable>
+                <b>Brak</b>
+            </ng-template>
+        </p>
+        <p>Dodatki opcjonalne: <b *ngFor="let topping of toppings, let i = index">{{topping}}<ng-container
+                    *ngIf="!(toppings.length - 1 == i)">, </ng-container></b></p>
+    </div>
+</div>

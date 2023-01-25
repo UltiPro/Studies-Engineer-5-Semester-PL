@@ -1,0 +1,97 @@
+<div class="body">
+    <div class="form-box">
+        <h3>Edytuj dane</h3>
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" formControlName="name">
+                <p class="help-block" *ngIf="!userForm.get('name').valid && userForm.get('name').touched">
+                    To pole jest wymagane
+                </p>
+
+            </div>
+            <div class="form-group">
+                <label for="age">Wiek:</label>
+                <input type="number" id="age" formControlName="age">
+                <p class="help-block"
+                        *ngIf="!userForm.get('age').valid && userForm.get('age').touched">
+                        <span *ngIf="userForm.get('age').errors['required']">
+                            To pole jest wymagane
+                        </span>
+                        <span *ngIf="userForm.get('age').errors['min'] && !userForm.get('age').errors['required']">
+                            Minimalny wiek to 18
+                        </span>
+                    </p>
+
+            </div>
+            <div class="form-group">
+                <label for="height">Wzrost [cm]:</label>
+                <input type="number" id="height" formControlName="height">
+                <p class="help-block"
+                        *ngIf="!userForm.get('height').valid && userForm.get('height').touched">
+                        <span *ngIf="userForm.get('height').errors['required']">
+                            To pole jest wymagane
+                        </span>
+                        <span *ngIf="userForm.get('height').errors['min'] && !userForm.get('height').errors['required']">
+                            Minimalny wzrost to 130cm
+                        </span>
+                    </p>
+
+            </div>
+            <div class="form-group">
+                <label for="weight">Waga [kg]:</label>
+                <input type="number" id="weight" formControlName="weight">
+                <p class="help-block"
+                        *ngIf="!userForm.get('weight').valid && userForm.get('weight').touched">
+                        <span *ngIf="userForm.get('weight').errors['required']">
+                            To pole jest wymagane
+                        </span>
+                        <span *ngIf="userForm.get('weight').errors['min'] && !userForm.get('weight').errors['required']">
+                            Minimalna waga to 40kg
+                        </span>
+                    </p>
+
+            </div>
+            <div class="form-select-box">
+                <div class="form-group">
+                    <label for="activity">Aktywność:</label>
+                    <select name="activity" id="activity" formControlName="activity">
+                        <option value=1.2>Prawie brak</option>
+                        <option value=1.375>Lekka aktywność</option>
+                        <option value=1.55>Umiarkowana aktywność</option>
+                        <option value=1.725>Duża aktywność</option>
+                        <option value=1.9>Bardzo duża aktywność</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="goal">Cel:</label>
+                    <select name="goal" id="goal" formControlName="goal">
+                        <option value=0>Schudnąć</option>
+                        <option value=1>Pozostać przy wadze</option>
+                        <option value=2>Przytyć</option>
+                    </select>
+                </div>
+            </div>
+            <div class="radio-box">
+                <div class="form-group">
+                    <label for="gender">
+                        Kobieta
+                        <input type="radio" value='Kobieta' name="gender" formControlName="gender">
+                        Mężczyzna
+                        <input type="radio" value="Mężczyzna" name="gender" formControlName="gender">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="diabets">
+                        Cukrzyca
+                        <input type="radio" value=true name="diabets" formControlName="diabets">
+                        Brak cukrzycy
+                        <input type="radio" value=false name="diabets" formControlName="diabets">
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" [disabled]="userForm.invalid">Zapisz</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="body">
+    <div class="usersite-box" *ngIf="!editingUser">
+        <div class="heading">
+            <h3>Witaj {{user.Name}} </h3>
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <hr>
+        <div class="user-info">
+            <div class="user-info-left">
+                <p><span>Wiek:</span> {{user.Age}} lat/a </p>
+                <p><span>Wzrost:</span> {{user.Height}}cm</p>
+                <p><span>Waga:</span> {{user.Weight}}kg </p>
+                <p><span>Płeć:</span> {{user.Gender}} </p>
+                <p><span>Aktywność:</span> {{activityText}} </p>
+                <p><span>Cel:</span> {{goalText}} </p>
+                <p><span>Cukrzyca:</span> {{user.Diabets?'Tak':"Nie"}} </p>
+            </div>
+            <div class="user-info-right">
+                <p><span>Zapotrzebowanie:</span> {{user.BMR.toFixed(0) }} kcal </p>
+                <p><span>Węglowodany:</span> {{user.Carbs.toFixed(0) }} g </p>
+                <p><span>Białko:</span> {{user.Protein.toFixed(0) }} g </p>
+                <p><span>Tłuszcz:</span> {{user.Fat.toFixed(0) }} g </p>
+
+            </div>
+        </div>
+        <div class="btns">
+            <button (click)="editingUser=!editingUser">Edytuj</button>
+            <button (click)="onLogout()">Wyloguj</button>
+        </div>
+    </div>
+    <div class="edit-user" *ngIf="editingUser">
+        <app-edit-user *ngIf="editingUser" (userChangedEvent)="onUserChangedEvent()" [user]="user"></app-edit-user>
+    </div>
+</div>

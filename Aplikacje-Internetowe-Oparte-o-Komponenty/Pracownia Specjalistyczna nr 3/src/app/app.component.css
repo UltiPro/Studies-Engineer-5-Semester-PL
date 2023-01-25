@@ -1,0 +1,21 @@
+.switch-container, .pizzas-container, .kebab-container
+{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+}
+
+.switch-container-button{
+    width: 200px;
+    height: 75px;
+    margin: 0 25px 0 25px;
+    font-size: 1.9rem;
+    background-color: wheat;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.switch-container-button:hover{
+    background-color: whitesmoke;
+}
