@@ -1,0 +1,56 @@
+.form-group>label,
+.form-group>input,
+.form-group>select {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-group>select {
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#formContact {
+    width: 50%;
+    margin: auto;
+    padding-top: 15px;
+    border: 2px black solid;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#nameContact,
+#surnameContact,
+#emailContact {
+    height: 25px;
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+
+#textareaContact {
+    width: 80%;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+#textareaContact:hover,
+#emailContact:hover,
+#surnameContact:hover,
+#nameContact:hover {
+    border: 1px solid red;
+}
+
+#buttonSubmit {
+    width: 80%;
+    height: 35px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: green;
+    transition: all 0.3s;
+}
+
+#buttonSubmit:hover {
+    background-color: lightgreen;
+}

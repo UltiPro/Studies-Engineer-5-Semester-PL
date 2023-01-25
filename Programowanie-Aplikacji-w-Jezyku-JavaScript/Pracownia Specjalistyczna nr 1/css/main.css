@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/background.png");
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+a,
+a:focus,
+a:active {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: #c4bbaf;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    height: 65px;
+    font-size: 25px;
+    background-color: #8d5b4c;
+    border-bottom: 2px black solid;
+}
+
+header>a,
+header>nav {
+    height: 100%;
+    display: inline-block;
+    margin: 0 50px 0 10px;
+    overflow: hidden;
+}
+
+header>a>img,
+header>a>h1 {
+    display: inline;
+}
+
+header>a>img {
+    margin: 2px 0 -1px 0;
+    width: 48px;
+    height: 48px;
+}
+
+header>nav>ul {
+    height: 100%;
+}
+
+header>nav>ul>a {
+    height: 100%;
+    display: inline-block;
+    font-size: 35px;
+    padding: 15px 10px 5px 10px;
+    margin: 0 50px 0 0;
+    height: 100%;
+}
+
+section {
+    width: 75%;
+    min-height: 88vh;
+    margin: auto;
+    padding: 1rem 1rem 1rem 1rem;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: rgb(167, 138, 127, 0.8);
+}
+
+section>h2 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
+
+section>div:last-child {
+    margin-bottom: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    font-size: 1.5rem;
+    background-color: #8d5b4c;
+    border-top: 1px solid black;
+}
+
+footer>h3,
+footer>a {
+    display: inline;
+    margin-left: 25px;
+}
+
+.centerInfo {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rightDate {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: lightgray;
+    letter-spacing: 2px;
+}
+
+.textUnderline {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1209px) {
+    ul {
+        list-style-type: disc;
+    }
+
+    header {
+        height: auto;
+    }
+
+    header>a,
+    header>nav {
+        display: block;
+    }
+
+    header>nav>ul>a {
+        display: block;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 709px) {
+    header {
+        font-size: 15px;
+    }
+
+    header>nav>ul>a {
+        font-size: 20px;
+    }
+}
