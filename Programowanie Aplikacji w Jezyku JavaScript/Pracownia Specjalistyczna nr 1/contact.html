@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog kulinarny</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="/img/logo.png" alt="Logo" />
+            <h1>Blog kulinarny</h1>
+        </a>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Strona Główna</li>
+                </a>
+                <a href="about.html">
+                    <li>O Autorze</li>
+                </a>
+                <a href="contact.html">
+                    <li>Kontakt</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Kontakt</h2>
+        <div class="centerInfo">
+            <form id="formContact">
+                <div class="form-group">
+                    <label for="contactOption">Wybierz powód kontaktu:</label>
+                    <select name="contactOption" id="contactOption">
+                        <option value="NewRecipe">Nowy Przepis</option>
+                        <option value="WrongRecipe">Zły Przepis</option>
+                        <option value="Copyright">Prawa Autorskie</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nameContact">Name:</label>
+                    <input type="text" name="nameContact" id="nameContact" required />
+                </div>
+                <div class="form-group">
+                    <label for="surnameContact">Surname:</label>
+                    <input type="text" name="surnameContact" id="surnameContact" required />
+                </div>
+                <div class="form-group">
+                    <label for="emailContact">Email:</label>
+                    <input type="email" name="emailContact" id="emailContact" required />
+                </div>
+                <div class="form-group">
+                    <textarea id="textareaContact" name="textareaContact" rows="4" cols="50"
+                        required> Write your problem...</textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="buttonSubmit">Zatwierdź</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h3>Blog kulinarny sp. z o.o.</h3>
+        <a href="https://www.facebook.com/patryk.ulti/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/ulti_pl/" target="_blank">Instagram</a>
+        <a href="https://github.com/UltiPro" target="_blank">GitHub</a>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
