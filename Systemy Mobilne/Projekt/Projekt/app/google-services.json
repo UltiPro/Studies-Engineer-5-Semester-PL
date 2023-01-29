@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "385686474520",
+    "project_id": "chatapplication-cfe69",
+    "storage_bucket": "chatapplication-cfe69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385686474520:android:98e40da413da40e627186d",
+        "android_client_info": {
+          "package_name": "com.eazyalgo.chatapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385686474520-goa99poc48h6r260v22s136btbl09te6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsS17PwwPAEdlYHwzGrbfmyOD3_szRqzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385686474520-goa99poc48h6r260v22s136btbl09te6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

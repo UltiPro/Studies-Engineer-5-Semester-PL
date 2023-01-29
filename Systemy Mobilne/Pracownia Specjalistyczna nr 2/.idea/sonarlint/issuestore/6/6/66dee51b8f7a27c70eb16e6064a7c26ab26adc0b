@@ -1,0 +1,30 @@
+
+I
+java:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+u
+java:S1450"ZRemove the "buttonFalse" field and declare it as a local variable in the relevant methods.(…ô®Èûÿÿÿÿ
+t
+java:S1450"YRemove the "buttonNext" field and declare it as a local variable in the relevant methods.(ÎÖÃ¤øÿÿÿÿ
+q
+java:S1450"[Remove the "buttonPrompt" field and declare it as a local variable in the relevant methods.(Í§¾±
+t
+java:S1450"YRemove the "buttonTrue" field and declare it as a local variable in the relevant methods.(²éß±şÿÿÿÿ
+z
+java:S1450"_Remove the "questionTextView" field and declare it as a local variable in the relevant methods.(êÿ±ıÿÿÿÿ
+G
+java:S3599",Use another way to initialize this instance.(œÉ¹ıÿÿÿÿ
+t
+java:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(œÉ¹ıÿÿÿÿ
+G
+java:S16028",Remove useless curly braces around statement(Î½Œÿÿÿÿÿ
+B
+java:S1602<",Remove useless curly braces around statement(Ô÷èÄ
+J
+java:S1611G"/Remove the parentheses around the "v" parameter(¼ ãÑÿÿÿÿÿ
+T
+java:S1874K">Remove this use of "startActivityForResult"; it is deprecated.(îü‰”
+`
+java:S1874Œ"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(¹Î¾
+Q	java:S125c"<This block of commented-out lines of code should be removed.(Ñ‚«µ
+O
+java:S1068"4Remove this unused "questionTextView" private field.(êÿ±ıÿÿÿÿ
