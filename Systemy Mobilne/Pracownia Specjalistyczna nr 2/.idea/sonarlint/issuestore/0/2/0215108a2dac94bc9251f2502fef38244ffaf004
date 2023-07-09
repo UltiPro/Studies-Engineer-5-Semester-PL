@@ -1,11 +1,0 @@
-
-E
-java:S1604"(Make this anonymous inner class a lambda(Éõ‰¡8Å¾Œ¿0
-~
-java:S1450"\Remove the "goBackButtton" field and declare it as a local variable in the relevant methods.(íø‹³ıÿÿÿÿ8ÉêŠ¿0
-ƒ
-java:S1450"fRemove the "showCorrectAnswerButton" field and declare it as a local variable in the relevant methods.(âàÕ8ÊêŠ¿0
-L
-java:S1611%"/Remove the parentheses around the "v" parameter(Áíõˆ8ÒêŠ¿0
-I
-java:S1602%",Remove useless curly braces around statement(Áíõˆ8ÒêŠ¿0

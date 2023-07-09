@@ -1,5 +1,0 @@
-Invoice for firm number 8
-==============================
-NIP: 6969696969696969
-Price to pay: 1091.8600000000001 PLN
-Operation date: Tue Jan 24 02:38:34 CET 2023

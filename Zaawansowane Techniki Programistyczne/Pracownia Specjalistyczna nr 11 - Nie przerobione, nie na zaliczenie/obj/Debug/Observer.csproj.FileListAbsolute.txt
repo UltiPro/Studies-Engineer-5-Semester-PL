@@ -1,7 +1,0 @@
-E:\Programowanie\patterns\DesignPatternsStudia\Observer\obj\Debug\Observer.csprojResolveAssemblyReference.cache
-E:\Programowanie\patterns\DesignPatternsStudia\Observer\obj\Debug\Observer.csproj.CoreCompileInputs.cache
-E:\Programowanie\patterns\DesignPatternsStudia\Observer\bin\Debug\Observer.exe.config
-E:\Programowanie\patterns\DesignPatternsStudia\Observer\bin\Debug\Observer.exe
-E:\Programowanie\patterns\DesignPatternsStudia\Observer\bin\Debug\Observer.pdb
-E:\Programowanie\patterns\DesignPatternsStudia\Observer\obj\Debug\Observer.exe
-E:\Programowanie\patterns\DesignPatternsStudia\Observer\obj\Debug\Observer.pdb
