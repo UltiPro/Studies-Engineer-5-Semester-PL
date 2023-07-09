@@ -1,0 +1,1 @@
+const Zad4 = (array) => array.map(n => n.replace(/[aA]/g, 4).replace(/[eE]/g, 3).replace(/^(...)(.+)(...)$/, "$1...$3"));

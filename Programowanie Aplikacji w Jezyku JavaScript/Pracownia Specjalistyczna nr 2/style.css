@@ -1,0 +1,13 @@
+.zadBlock {
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#odp1,
+#odp2 {
+    margin-top: 5px;
+    color: red;
+    max-width: 90vw;
+    word-wrap: break-word;
+}
